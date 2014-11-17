@@ -5,6 +5,7 @@ MAINTAINER Nathan Samano "nsv9982@saintjoe.edu"
 RUN apt-get update
 RUN apt-get install -y vim
 RUN echo 'Installed vim'
+RUN apt-get install curl
 RUN curl -sL https://deb.nodesource.com/setup | sudo bash -
 RUN apt-get install -y nodejs
 RUN curl -O http://downloads.mongodb.org/linux/mongodb-linux-x86_64-2.6.4.tgz
