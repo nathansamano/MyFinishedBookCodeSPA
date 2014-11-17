@@ -3,6 +3,7 @@
 FROM ubuntu:14.04
 MAINTAINER Nathan Samano "nsv9982@saintjoe.edu"
 RUN apt-get update
+RUN apt-get install build-essential
 RUN apt-get install -y vim
 RUN echo 'Installed vim'
 RUN apt-get install curl
