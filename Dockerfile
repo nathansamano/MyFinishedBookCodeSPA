@@ -15,7 +15,7 @@ RUN curl -O http://downloads.mongodb.org/linux/mongodb-linux-x86_64-2.6.4.tgz
 RUN tar -zxvf mongodb-linux-x86_64-2.6.4.tgz
 RUN mkdir -p mongodb
 RUN cp -R -n mongodb-linux-x86_64-2.6.4/ mongodb
-RUN export PATH=~/mongdb/mongod-linux-x86_64-2.6.4/bin:$PATH
+RUN export PATH=~/mongodb/mongod-linux-x86_64-2.6.4/bin:$PATH
 RUN mkdir -p /data/db
 RUN chmod 777 /data
 RUN echo 'You may now run mongod --fork --syslog to start mongo'
