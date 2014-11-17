@@ -7,6 +7,8 @@ RUN apt-get install -y build-essential
 RUN apt-get install -y vim
 RUN echo 'Installed vim'
 RUN apt-get install -y curl
+RUN apt-get install -y git
+RUN git clone https://github.com/nathansamano/MyFinishedBookCodeSPA.git
 RUN curl -sL https://deb.nodesource.com/setup | sudo bash -
 RUN apt-get install -y nodejs
 RUN curl -O http://downloads.mongodb.org/linux/mongodb-linux-x86_64-2.6.4.tgz
